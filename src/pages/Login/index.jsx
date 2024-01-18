@@ -1,4 +1,6 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { Button, Img, Input, Line, Text } from "components";
 import LogInColumn from "components/LogInColumn";
@@ -47,7 +49,8 @@ const LoginPage = () => {
                 href="javascript:"
                 className="absolute h-max inset-[0] justify-center m-auto text-[13px] text-white-A700 w-max"
               >
-                <Text size="txtPoppinsBold13">Login</Text>
+                 <Link size="txtPoppinsBold13"
+                 to="/desktopone">Login</Link>
               </a>
             </div>
             <div className="md:h-12 h-3.5 mt-[34px] relative w-full">
